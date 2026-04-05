@@ -1,0 +1,33 @@
+2026-03-30 18:33:38	-	jovial_legentil	-	046a453b3e1e09e4c464b8e5f62a5190	245295e2-077a-4c48-9063-fab7bb239ef0	nextflow run main.nf
+2026-03-30 18:37:01	4.2s	insane_coulomb	ERR	8c4910cd9c96d0c6a76f6081df718162	944737b4-10c2-45d5-ab57-93dc9f76bc3e	nextflow run main.nf
+2026-03-30 18:39:44	-	tiny_lichterman	-	c90503c539d3fdd900fa62e55c1d9332	72eed049-15d6-4217-a43f-7d2db56f794b	nextflow run main.nf
+2026-03-30 18:42:15	3.7s	drunk_austin	ERR	f32b41f2fb10b4df83e2e5308c6ce17f	a8d64e1e-03be-4bc5-ad07-71329a219a51	nextflow run main.nf
+2026-03-30 18:47:57	-	hungry_stone	-	8b0702692823bc7c44b50e4303beec04	4e277f67-4fd1-4c0f-b85c-b9c27ba16a3e	nextflow run main.nf
+2026-03-30 18:49:14	-	thirsty_lamarck	-	23a16cc6032055cb7f5c9b1dd34755a1	7f7869e0-8bc1-4aa4-b7f2-750e5a60e2ba	nextflow run main.nf
+2026-03-30 18:52:38	5.2s	small_wiles	ERR	571aef3bd7e824808e23b36845981ee7	f36b3101-eef0-4685-97f4-addac0a2b723	nextflow run main.nf
+2026-03-30 18:55:22	-	agitated_ochoa	-	fad245afc1e176cac4b7a5c8fc32473a	248ad2da-e0c1-4898-a31f-cd44bad6dc8d	nextflow run main.nf
+2026-03-30 18:57:32	2.9s	high_meucci	ERR	0fc077bf28ecb268d6b2850f13b5994a	e517000f-ba5c-4e3a-a1a7-a44c67b63f06	nextflow run main.nf
+2026-03-30 19:00:25	2.9s	chaotic_visvesvaraya	ERR	5a75aa4e84732c21b2d770b72c609081	9563dc8d-ee8b-4511-865c-facba5a7708b	nextflow run main.nf
+2026-03-30 19:02:30	3.1s	elated_heisenberg	ERR	3bcc5ec18f0ef9a6e2e8f266a912ec33	b3474ea9-84d2-4dec-84e7-c046fcced940	nextflow run main.nf
+2026-03-31 07:17:17	4.6s	dreamy_payne	OK	f52a0ef713f0d08abdbfc5810ec474c8	8224dfe0-7d69-4aa3-8724-c80e468f9d9b	nextflow run main.nf
+2026-04-02 17:03:52	-	lethal_brenner	-	ff16886e838bc3e8920703ff9fa54cef	15a04411-3b81-4ce8-83f1-1f7d6b9dbfe3	nextflow run main.nf
+2026-04-02 17:06:28	-	voluminous_ochoa	-	8d91ae29fbd10b610cda4c99675fb2d7	dd6c351f-8e41-4ee0-81aa-5dc7f18dfbed	nextflow run main.nf
+2026-04-02 17:08:13	-	zen_lumiere	-	ccb4130f6c0a2c39755a045c31240431	fe1a260f-19e7-4243-a520-728fd249e28f	nextflow run main.nf
+2026-04-02 17:10:04	-	maniac_morse	-	75b1426270214ab8c8abea0eaabdac5a	98f6c270-8905-47c1-936e-067c48aa43ba	nextflow run main.nf
+2026-04-02 17:12:19	5.5s	sharp_payne	OK	5ba3aeb67f76553fe191c8853777e459	ac301e7a-04bf-46d7-9ac7-f10f1c1531b0	nextflow run main.nf
+2026-04-02 17:14:39	5.4s	spontaneous_bardeen	OK	5ba3aeb67f76553fe191c8853777e459	a8bace93-b261-4f63-9da8-29f96e4164dc	nextflow run main.nf
+2026-04-02 17:27:58	-	grave_leibniz	-	85738768700f922bc91c60cf8f5ee9e8	78ae564a-57ff-48bc-ba6f-5e901d09a476	nextflow run main.nf
+2026-04-02 17:29:35	-	friendly_wiles	-	6978dccde5fb2fda93390578872329d9	5acffc0c-64b9-4a48-8703-099b204f1d23	nextflow run main.nf
+2026-04-02 17:32:36	-	cheeky_colden	-	a2da717caa5f447e98e4aeb9ed3189f3	f15d2222-0085-415b-9a67-05218d5ae864	nextflow run main.nf
+2026-04-03 07:08:02	2.2s	soggy_bhabha	ERR	6a225270cdc206969c5588cdb83a6a38	d0bf4447-0e29-4493-91e7-0f39c97838aa	nextflow run main.nf
+2026-04-03 07:16:12	3.5s	angry_golick	OK	99a769122f076fc1fb0738da43b0c888	7bc5766a-96bd-4e2f-9bae-7ef4ee9096c5	nextflow run main.nf
+2026-04-03 07:20:41	4.8s	special_stonebraker	OK	99a769122f076fc1fb0738da43b0c888	e632dfbc-6c0f-4681-9eb8-978525361701	nextflow run main.nf
+2026-04-03 07:21:10	-	ecstatic_ekeblad	-	bffc36a190c01046961cb43462156daf	498e8c7b-45c7-4354-ab05-d7d6172da048	nextflow run nextflow.config
+2026-04-03 07:25:55	3.2s	loving_bose	OK	99a769122f076fc1fb0738da43b0c888	1223f776-6a4d-4b77-8c43-9608ff7138e7	nextflow run main.nf
+2026-04-03 07:59:09	5.7s	cranky_cori	ERR	99a769122f076fc1fb0738da43b0c888	a3ccde2e-df55-4b6b-8cdb-624ec285ab0f	nextflow run main.nf -with-docker
+2026-04-03 08:13:09	4.5s	modest_lalande	ERR	e32a38472dd14cdf11e7b0a87762a204	2b0ae9bf-4e68-4e23-a72a-fa1de76f413d	nextflow run main.nf -with-docker
+2026-04-03 08:21:19	4.7s	lethal_laplace	ERR	3189bed8759a4f71c17d9bc8fa3fe1ff	2b0ae9bf-4e68-4e23-a72a-fa1de76f413d	nextflow run main.nf -with-docker -resume
+2026-04-03 08:25:24	-	nauseous_dalembert	-	346deb63ad2ae7fc2323f7d9cf1222c2	2d714e3e-26ec-4e5c-b1cf-e400a1468d32	nextflow run main.nf -with-docker
+2026-04-03 11:51:28	8s	determined_majorana	ERR	d34c0d5618c58003471f65bf33d6b0f4	e72e1d77-861c-4412-8779-190e2bdaf2a9	nextflow run main.nf -with-docker
+2026-04-03 12:06:37	6.4s	sick_hopper	OK	0fb836169225140f7a4ae432633ac5d2	e4a4349e-9cd9-45b7-ad14-cd7f5ecbf34c	nextflow run main.nf -with-docker
+2026-04-05 13:51:51	8.4s	modest_euler	OK	0fb836169225140f7a4ae432633ac5d2	9eb118b4-54e3-4fe2-8240-ccbdbd7dc502	nextflow run main.nf

@@ -1,0 +1,115 @@
+Apr-03 08:13:08.717 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -with-docker
+Apr-03 08:13:08.841 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-03 08:13:08.860 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/sriram/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-03 08:13:08.886 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-03 08:13:08.887 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-03 08:13:08.892 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-03 08:13:08.909 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-03 08:13:09.077 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-03 08:13:09.127 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/sriram/rna_seq_pipeline/nextflow.config
+Apr-03 08:13:09.131 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/sriram/rna_seq_pipeline/nextflow.config
+Apr-03 08:13:09.178 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-03 08:13:09.748 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by command-line option `-with-docker -`
+Apr-03 08:13:09.760 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-03 08:13:09.760 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-03 08:13:09.778 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/sriram/.nextflow/secrets/store.json
+Apr-03 08:13:09.781 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@177c41d7] - activable => nextflow.secret.LocalSecretsProvider@177c41d7
+Apr-03 08:13:09.794 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-03 08:13:09.807 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [modest_lalande] DSL2 - revision: e32a38472d
+Apr-03 08:13:09.878 [main] DEBUG nextflow.Session - Session UUID: 2b0ae9bf-4e68-4e23-a72a-fa1de76f413d
+Apr-03 08:13:09.879 [main] DEBUG nextflow.Session - Run name: modest_lalande
+Apr-03 08:13:09.880 [main] DEBUG nextflow.Session - Executor pool size: 12
+Apr-03 08:13:09.889 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-03 08:13:09.901 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-03 08:13:09.925 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 38406@DESKTOP-SA4U758 [127.0.1.1]
+  CPUs: 12 - Mem: 7.6 GB (3.4 GB) - Swap: 2 GB (2 GB)
+Apr-03 08:13:09.952 [main] DEBUG nextflow.Session - Work-dir: /home/sriram/rna_seq_pipeline/work [ext2/ext3]
+Apr-03 08:13:09.953 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/sriram/rna_seq_pipeline/bin
+Apr-03 08:13:09.983 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-03 08:13:09.993 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-03 08:13:09.996 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-03 08:13:10.039 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-03 08:13:10.048 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Apr-03 08:13:10.148 [main] DEBUG nextflow.Session - Session start
+Apr-03 08:13:10.562 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-03 08:13:10.756 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 08:13:10.756 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 08:13:10.768 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-03 08:13:10.779 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=7.6 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Apr-03 08:13:10.781 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-03 08:13:10.810 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'QC': maxForks=0; fair=false; array=0
+Apr-03 08:13:10.851 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 08:13:10.852 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 08:13:10.854 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIM': maxForks=0; fair=false; array=0
+Apr-03 08:13:10.859 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 08:13:10.859 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 08:13:10.861 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ALIGN': maxForks=0; fair=false; array=0
+Apr-03 08:13:10.864 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-03 08:13:10.864 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-03 08:13:10.865 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COUNT': maxForks=0; fair=false; array=0
+Apr-03 08:13:10.868 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: QC, ALIGN, TRIM, COUNT
+Apr-03 08:13:10.871 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+Apr-03 08:13:10.878 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QC
+Apr-03 08:13:10.879 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: reference/; pattern: genome_index*.ht2; options: [:]
+Apr-03 08:13:10.879 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIM
+Apr-03 08:13:10.880 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ALIGN
+Apr-03 08:13:10.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COUNT
+Apr-03 08:13:10.883 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3ba67aa0cc6e4605: /home/sriram/rna_seq_pipeline/main.nf
+Apr-03 08:13:10.883 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-03 08:13:10.883 [main] DEBUG nextflow.Session - Session await
+Apr-03 08:13:11.115 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-03 08:13:11.124 [Task submitter] INFO  nextflow.Session - [71/ae7f9e] Submitted process > QC (1)
+Apr-03 08:13:11.141 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-03 08:13:11.142 [Task submitter] INFO  nextflow.Session - [a4/89b638] Submitted process > TRIM (1)
+Apr-03 08:13:12.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: TRIM (1); status: COMPLETED; exit: 0; error: -; workDir: /home/sriram/rna_seq_pipeline/work/a4/89b638325fc10a69b23d674862bf96]
+Apr-03 08:13:12.208 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-03 08:13:12.243 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-03 08:13:12.255 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-03 08:13:12.255 [Task submitter] INFO  nextflow.Session - [3d/a4e4f4] Submitted process > ALIGN (1)
+Apr-03 08:13:13.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: ALIGN (1); status: COMPLETED; exit: 1; error: -; workDir: /home/sriram/rna_seq_pipeline/work/3d/a4e4f4b01cbb647f61886ad8e492be]
+Apr-03 08:13:13.276 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ALIGN (1); work-dir=/home/sriram/rna_seq_pipeline/work/3d/a4e4f4b01cbb647f61886ad8e492be
+  error [nextflow.exception.ProcessFailedException]: Process `ALIGN (1)` terminated with an error exit status (1)
+Apr-03 08:13:13.300 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ALIGN (1)'
+
+Caused by:
+  Process `ALIGN (1)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  hisat2 -x reference/genome_index -U clean.fastq -S aligned.sam > align.log 2>&1
+  
+  samtools view -bS aligned.sam > aligned.bam
+  samtools sort aligned.bam -o aligned_sorted.bam
+  samtools index aligned_sorted.bam
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Work dir:
+  /home/sriram/rna_seq_pipeline/work/3d/a4e4f4b01cbb647f61886ad8e492be
+
+Container:
+  rna_pipeline
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Apr-03 08:13:13.307 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `ALIGN (1)` terminated with an error exit status (1)
+Apr-03 08:13:13.333 [TaskFinalizer-2] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Apr-03 08:13:13.350 [TaskFinalizer-2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=2s; failedDuration=1.9s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=4 GB; ]
+Apr-03 08:13:13.371 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-03 08:13:13.514 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-03 08:13:13.514 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-03 08:13:13.516 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=2s; failedDuration=1.9s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=4 GB; ]
+Apr-03 08:13:13.523 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-03 08:13:13.544 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

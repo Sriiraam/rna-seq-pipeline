@@ -1,0 +1,107 @@
+Apr-03 08:10:44.190 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -with-docker
+Apr-03 08:10:44.326 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-03 08:10:44.345 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/sriram/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-03 08:10:44.373 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-03 08:10:44.374 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-03 08:10:44.377 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-03 08:10:44.393 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-03 08:10:44.543 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-03 08:10:44.576 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/sriram/rna_seq_pipeline/nextflow.config
+Apr-03 08:10:44.579 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/sriram/rna_seq_pipeline/nextflow.config
+Apr-03 08:10:44.616 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-03 08:10:45.067 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Docker container as requested by command-line option `-with-docker -`
+Apr-03 08:10:45.076 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-03 08:10:45.076 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-03 08:10:45.090 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/sriram/.nextflow/secrets/store.json
+Apr-03 08:10:45.093 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@177c41d7] - activable => nextflow.secret.LocalSecretsProvider@177c41d7
+Apr-03 08:10:45.102 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-03 08:10:45.113 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [friendly_gates] DSL2 - revision: d3828bdb26
+Apr-03 08:10:45.177 [main] DEBUG nextflow.Session - Session UUID: e3e70634-ffb6-4469-911d-598076f77b8d
+Apr-03 08:10:45.178 [main] DEBUG nextflow.Session - Run name: friendly_gates
+Apr-03 08:10:45.179 [main] DEBUG nextflow.Session - Executor pool size: 12
+Apr-03 08:10:45.190 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-03 08:10:45.195 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-03 08:10:45.214 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 37658@DESKTOP-SA4U758 [127.0.1.1]
+  CPUs: 12 - Mem: 7.6 GB (3.4 GB) - Swap: 2 GB (2 GB)
+Apr-03 08:10:45.237 [main] DEBUG nextflow.Session - Work-dir: /home/sriram/rna_seq_pipeline/work [ext2/ext3]
+Apr-03 08:10:45.237 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/sriram/rna_seq_pipeline/bin
+Apr-03 08:10:45.264 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-03 08:10:45.275 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-03 08:10:45.277 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-03 08:10:45.323 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-03 08:10:45.335 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Apr-03 08:10:45.394 [main] DEBUG nextflow.Session - Session start
+Apr-03 08:10:45.551 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Apr-03 08:10:45.580 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Apr-03 08:10:45.605 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /home/sriram/rna_seq_pipeline/main.nf
+- cause: Unexpected input: '{' @ line 38, column 15.
+   process ALIGN {
+                 ^
+
+1 error
+
+NOTE: If this is the beginning of a process or workflow, there may be a syntax error in the body, such as a missing or extra comma, for which a more specific error message could not be produced.
+nextflow.exception.ScriptCompilationException: Script compilation error
+- file : /home/sriram/rna_seq_pipeline/main.nf
+- cause: Unexpected input: '{' @ line 38, column 15.
+   process ALIGN {
+                 ^
+
+1 error
+
+NOTE: If this is the beginning of a process or workflow, there may be a syntax error in the body, such as a missing or extra comma, for which a more specific error message could not be produced.
+	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:204)
+	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy:215)
+	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:232)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:429)
+	at nextflow.cli.Launcher.run(Launcher.groovy:515)
+	at nextflow.cli.Launcher.main(Launcher.groovy:675)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script_8d90b13dc1f28fbf: 38: Unexpected input: '{' @ line 38, column 15.
+   process ALIGN {
+                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4739)
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$100(AstBuilder.java:169)
+	at org.apache.groovy.parser.antlr4.AstBuilder$3.syntaxError(AstBuilder.java:4750)
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
+	at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportInputMismatch(DescriptiveErrorStrategy.java:104)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:55)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recoverInline(DescriptiveErrorStrategy.java:68)
+	at groovyjarjarantlr4.v4.runtime.Parser.match(Parser.java:213)
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:368)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:243)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:221)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:262)
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
+	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:631)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:365)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:314)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:639)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:643)
+	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:183)
+	... 7 common frames omitted
